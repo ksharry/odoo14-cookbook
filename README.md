@@ -11,9 +11,9 @@
 8. compute_fileds
 9. related_fields
 10. reference_fields
-11. model_inheritance
-12. copy_model
-13. delegation_inheritance
+11. 第一種繼承model_inheritance
+12. 第二種繼承copy_model
+13. 第三種代理繼承delegation_inheritance
 14. abstract_models
 
 #### 第五章
