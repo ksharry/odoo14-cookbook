@@ -6,7 +6,7 @@ class BookCategory(models.Model):
     _description = 'Library Book Category'
 
     _parent_store = True
-    _parent_name = "parent_id"  # 如果字段名为parent_id可不写
+    _parent_name = "parent_id"  
 
     name = fields.Char('Category')
     description = fields.Char('Description')
@@ -28,7 +28,7 @@ class BookCategory(models.Model):
             raise models.ValidationError('Error! You cannot create recursive categories.')
 
 
-    #4 新建记录
+    #4 新建紀錄
     def create_categories(self):
         categ1 = {
             'name': 'Child category 1',

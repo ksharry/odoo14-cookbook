@@ -13,7 +13,7 @@ class BaseArchive(models.AbstractModel):
             record.active = not record.active
 
 class LibraryBook(models.Model):
-    #1.模型
+    #1 模型
     _name = 'library.book'
     _inherit = ['base.archive']   #14
     _description = 'Library Book'
@@ -28,7 +28,7 @@ class LibraryBook(models.Model):
         ('available', 'Available'),
         ('lost', 'Lost')],
         'State', default="draft")
-    #2.新增欄位
+    #2 新增欄位
     description = fields.Html('Description', sanitize=True, strip_style=False)
     cover = fields.Binary('Book Cover')
     out_of_print = fields.Boolean('Out of Print?')
@@ -43,14 +43,14 @@ class LibraryBook(models.Model):
         'Reader Average Rating',
         digits=(14, 4), # Optional precision (total, decimals),
         )
-    cost_price = fields.Float('Book Cost', digits='Book Price')  #3.小數位數
-    currency_id = fields.Many2one(    #4.貨幣字段
+    cost_price = fields.Float('Book Cost', digits='Book Price')  #3 小數位數
+    currency_id = fields.Many2one(    #4 貨幣字段
         'res.currency', string='Currency')
     retail_price = fields.Monetary(
         'Retail Price',
         # optional: currency_field='currency_id',
     )
-    publisher_id = fields.Many2one(    #5.m2o
+    publisher_id = fields.Many2one(    #5 關聯欄位m2o
         'res.partner', string='Publisher',
         # optional:
         ondelete='set null',
@@ -69,10 +69,10 @@ class LibraryBook(models.Model):
         'res.partner', string='Publisher')
     publisher_city = fields.Char(
         'Publisher City',
-        related='publisher_id.city',   #9.關聯
+        related='publisher_id.city',   #9 related_fields
         readonly=True)
 
-    ref_doc_id = fields.Reference(     #10.參照
+    ref_doc_id = fields.Reference(     #10 reference_fields
         selection='_referencable_models',
         string='Reference Document')
 
@@ -85,20 +85,20 @@ class LibraryBook(models.Model):
             result.append((record.id, rec_name))
         return result
 
-    #7.條件判斷方式1
+    #7 條件判斷方式1
     _sql_constraints = [
         ('name_uniq', 'UNIQUE(name)', 'Book title must be unique.'),
         ('positive_page', 'CHECK(pages>0)', 'No. of pages must be positive')
     ]
 
-    #7.條件判斷方式2
+    #7 條件判斷方式2
     @api.constrains('date_release')
     def _check_release_date(self):
         for record in self:
             if record.date_release and record.date_release > fields.Date.today():
                raise models.ValidationError('Release date must be in the past')
 
-    #8.計算天數
+    #8 計算天數
     @api.depends('date_release')
     def _compute_age(self):
         today = fields.Date.today()
@@ -109,19 +109,18 @@ class LibraryBook(models.Model):
             else:
                 book.age_days = 0
      
-    #8.計算欄位
+    #8 計算欄位
     def _inverse_age(self):
         today = fields.Date.today()
         for book in self.filtered('date_release'):
             d = today - timedelta(days=book.age_days)
             book.date_release = d
  
-    #8.計算欄位的搜尋
+    #8 計算欄位的搜尋
     def _search_age(self, operator, value):
         today = fields.Date.today()
         value_days = timedelta(days=value)
         value_date = today - value_days
-        # 运算符转换：
         # age_days > value -> date < value_date
         operator_map = {
             '>': '<', '>=': '<=',
@@ -130,14 +129,14 @@ class LibraryBook(models.Model):
         new_op = operator_map.get(operator, operator)
         return [('date_release', new_op, value_date)]
 
-    #10.關聯的模型
+    #10 關聯的模型
     @api.model
     def _referencable_models(self):
         models = self.env['ir.model'].search([
             ('field_id.name', '=', 'message_ids')])
         return [(x.model, x.name) for x in models]
 
-    #11.第一種繼承
+    #11 第一種繼承
     class ResPartner(models.Model):
         _inherit = 'res.partner'
         _order = 'name'
@@ -157,7 +156,7 @@ class LibraryBook(models.Model):
         for r in self:
             r.count_books = len(r.authored_book_ids)
 
-    #13.第三種代理繼承,可以同步
+    #13 第三種代理繼承,可以同步
     class LibraryMember(models.Model):
         _name = 'library.member'
         _inherits = {'res.partner': 'partner_id'}

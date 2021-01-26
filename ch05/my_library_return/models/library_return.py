@@ -1,4 +1,4 @@
-#繼承模型中定義的業務邏輯
+#11 繼承模型中定義的業務邏輯
 from datetime import timedelta
 from odoo import models, fields
 
