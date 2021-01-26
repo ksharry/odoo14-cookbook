@@ -1,4 +1,5 @@
-## 修改自己查看的習慣與修復BUG，程式碼都有備註以下的課程紀錄點，參考github:https://github.com/alanhou/odoo14-cookbook/tree/main/
+## 修改自己查看的習慣與修復BUG，程式碼都有備註以下的課程紀錄點。
+## 參考github:https://github.com/alanhou/odoo14-cookbook/tree/main/
 
 #### 第一章 安裝ODOO的建置方式
 
