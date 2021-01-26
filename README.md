@@ -1,8 +1,8 @@
 ##### 修改自己查看的習慣與修復BUG，程式碼都有備註以下的課程紀錄點，參考github:https://github.com/alanhou/odoo14-cookbook/tree/main/
 
 #### 第四章
-#1 模型
-#2 新增欄位
+1. 模型
+2. 新增欄位
 #3 小數位數
 #4 貨幣字段
 #5 關聯欄位m2o
