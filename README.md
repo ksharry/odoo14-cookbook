@@ -40,3 +40,16 @@
 14. read_group
 ![Alt text](https://imgur.com/KSy3hih.png)
 ![Alt text](https://imgur.com/MYxPsmH.png)
+
+#### 第六章 管理模組的數據(用4-6續編)
+1. 使用命名ID與外部空間
+2. 使用XML預載入數據
+  + demo.xml 載入DEMO時，才有資料
+  + data.xml 一開始安裝就有
+3. 使用noupdate和forcecreate標記
+  + noupdate 如果為1，載入模組時不更新資料
+  + forcecreate 如果為0，刪除後就不更新。
+4. 使用CSV載入資料
+5. 插件更新與數據遷移(pre,post)
+6. 從XML文件中刪除紀錄
+7. 在XML文件中使用參數
