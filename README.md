@@ -30,3 +30,5 @@
 12. 繼承原生，權限不能修改欄位
 13. 自定義搜尋方式
 14. read_group
+![Alt text](https://imgur.com/KSy3hih.png)
+![Alt text](https://imgur.com/MYxPsmH.png)
