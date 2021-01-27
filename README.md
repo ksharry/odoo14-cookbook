@@ -56,3 +56,20 @@
 7. 在XML文件中使用參數
 ![Alt text](https://imgur.com/VBt7UDV.png)
 ![Alt text](https://imgur.com/qmHYwkj.png)
+
+#### 第七章 調適模式
+1. --dev=reload,xml 修改python與xml會自動重啟
+2. 寫LOG來進行紀錄，擴充--log-web是html:debug --log-level=error
+3. 使用Odoo shell來交互調用方法  ./odoo-bin shell -d odoo-test -c myodoo.cfg --log-level=error
+   + product = env['product.product']
+   + location_stock = env.ref('stock.stock_location_stock')
+   + product.export_stock_level(location_stock)  #要先建立目錄並且sudo chown root:wkc -Rf /srv
+   + env.cr.commit()
+   + cat /srv/exports/stock_level.txt
+4. 使用Python調試器來追踪方法執行
+   + import pdb; pdb.set_trace()  #debug,設中斷
+   + 指令:args,next,list,p product,!fname(給變數),c,step(進入)
+   + pdb.runcall(product.export_stock_level, location_stock)   #shell 設定中斷
+5. 理解調試模式選項(開發著模式/技術)
+![Alt text](https://imgur.com/At8AQXl.png)
+   
