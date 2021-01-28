@@ -76,7 +76,15 @@
 
 #### 第八章 高級服務端開發技巧
 1. 新增租借功能-base_suspend_security 可以將追蹤記錄原帳號
-2. 新增遺失的按鈕
+2. 新增租借的按鈕
 3. 新增SQL執行的按鈕。
 4. wizard-編寫批次租借/還書功能  
-5. 歸還所有的書
+6. 歸還所有的書
+8. 新增統計圖表
+9. 新增設定是否自行租借書籍
+  + 在my_library/security/groups.xml文件中添加一個新分組
+  + 通過繼承res.config.settings模型來添加新字段：
+  + 通過xpath在已有的settings視圖中添加這一字段
+  + 為Settings添加一個菜單及一些動作
+  + 修改圖書表單視圖中的按鈕燕添加一個my_library.group_self_borrow分組
+10. 設定安裝時自動載入資料 hook功能
