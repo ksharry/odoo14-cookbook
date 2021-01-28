@@ -1,4 +1,4 @@
-## 修改自己程式備註的習慣與修復BUG，第四章後程式碼都有備註以下的課程紀錄點。
+## 修改自己程式備註的習慣，第四章後程式碼都有備註以下的課程紀錄點。
 ## 每章的步驟說明:https://alanhou.org/odoo14-cookbook/
 ## 參考github1:https://github.com/alanhou/odoo14-cookbook/tree/main/
 ## 參考github2:https://github.com/PacktPublishing/Odoo-14-Development-Cookbook-Fourth-Edition
