@@ -93,6 +93,7 @@
    + pre_init_hook：這個鉤子會在開始安裝模塊時觸發。它與post_init_hook正好相反，會在當前模塊安裝前觸發。
    + uninstall_hook：這個鉤子會在你卸載該模塊時觸發。它多用於模塊需要垃圾回收機制時
 ![Alt text](https://imgur.com/ZNqbXf3.png)
+![Alt text](https://imgur.com/LNHAEKz.png)
 ![Alt text](https://imgur.com/8IVdvjc.png)
 ![Alt text](https://imgur.com/5rfq3OF.png)
 ![Alt text](https://imgur.com/tGhBxmJ.png)
