@@ -1,6 +1,7 @@
 ## 修改自己程式備註的習慣與修復BUG，第四章後程式碼都有備註以下的課程紀錄點。
 ## 每章的步驟說明:https://alanhou.org/odoo14-cookbook/
-## 參考github:https://github.com/alanhou/odoo14-cookbook/tree/main/
+## 參考github1:https://github.com/alanhou/odoo14-cookbook/tree/main/
+## 參考github2:https://github.com/PacktPublishing/Odoo-14-Development-Cookbook-Fourth-Edition
 ## 註:如果裝不起來，請重啟伺服器後再安裝。
 
 #### 第一章 安裝ODOO的建置方式
