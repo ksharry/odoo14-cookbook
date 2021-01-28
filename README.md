@@ -75,7 +75,7 @@
 ![Alt text](https://imgur.com/At8AQXl.png)
 
 #### 第八章 高級服務端開發技巧
-1. 更改執行動作的用戶-base_suspend_security 可以將追蹤記錄原帳號
-2. 使用變更的上下文調用方法 
-3. 執行原生SQL查詢-注意跳過應用層面。
+1. 新增租借功能-base_suspend_security 可以將追蹤記錄原帳號
+2. 新增遺失的按鈕
+3. 新增SQL執行的按鈕。
 4. 編寫嚮導來引導用戶
