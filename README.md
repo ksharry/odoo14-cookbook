@@ -79,7 +79,9 @@
 2. 新增租借的按鈕
 3. 新增SQL執行的按鈕。
 4. wizard-編寫批次租借/還書功能  
+5. onchange(無程式)
 6. 歸還所有的書
+7. compute_onchange(無程式)
 8. 新增統計圖表
 9. 新增設定是否自行租借書籍
    + 在my_library/security/groups.xml文件中添加一個新分組
