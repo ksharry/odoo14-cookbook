@@ -89,4 +89,6 @@
    + 通過xpath在已有的settings視圖中添加這一字段
    + 為Settings添加一個菜單及一些動作
    + 修改圖書表單視圖中的按鈕燕添加一個my_library.group_self_borrow分組
-10. 設定安裝時自動載入資料 hook功能
+10. 設定安裝時自動載入資料post_init_hook功能
+   + pre_init_hook：這個鉤子會在開始安裝模塊時觸發。它與post_init_hook正好相反，會在當前模塊安裝前觸發。
+   + uninstall_hook：這個鉤子會在你卸載該模塊時觸發。它多用於模塊需要垃圾回收機制時
