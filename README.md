@@ -82,9 +82,9 @@
 6. 歸還所有的書
 8. 新增統計圖表
 9. 新增設定是否自行租借書籍
-  + 在my_library/security/groups.xml文件中添加一個新分組
-  + 通過繼承res.config.settings模型來添加新字段：
-  + 通過xpath在已有的settings視圖中添加這一字段
-  + 為Settings添加一個菜單及一些動作
-  + 修改圖書表單視圖中的按鈕燕添加一個my_library.group_self_borrow分組
+   + 在my_library/security/groups.xml文件中添加一個新分組
+   + 通過繼承res.config.settings模型來添加新字段：
+   + 通過xpath在已有的settings視圖中添加這一字段
+   + 為Settings添加一個菜單及一些動作
+   + 修改圖書表單視圖中的按鈕燕添加一個my_library.group_self_borrow分組
 10. 設定安裝時自動載入資料 hook功能
