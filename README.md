@@ -72,4 +72,9 @@
    + pdb.runcall(product.export_stock_level, location_stock)   #shell 設定中斷
 5. 理解調試模式選項(開發著模式/技術)
 ![Alt text](https://imgur.com/At8AQXl.png)
-   
+
+#### 第八章 高級服務端開發技巧
+1. 更改執行動作的用戶-base_suspend_security 可以將追蹤記錄原帳號
+2. 使用變更的上下文調用方法 
+3. 執行原生SQL查詢-注意跳過應用層面。
+4. 編寫嚮導來引導用戶
