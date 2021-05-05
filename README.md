@@ -1,4 +1,4 @@
-## 修改自己程式備註的習慣與修復BUG，第四章後程式碼都有備註以下的課程紀錄點。
+## 修改自己程式備註的習慣，第四章後程式碼都有備註以下的課程紀錄點。
 ## 每章的步驟說明:https://alanhou.org/odoo14-cookbook/
 ## 參考github1:https://github.com/alanhou/odoo14-cookbook/tree/main/
 ## 參考github2:https://github.com/PacktPublishing/Odoo-14-Development-Cookbook-Fourth-Edition
@@ -92,3 +92,37 @@
 10. 設定安裝時自動載入資料post_init_hook功能
    + pre_init_hook：這個鉤子會在開始安裝模塊時觸發。它與post_init_hook正好相反，會在當前模塊安裝前觸發。
    + uninstall_hook：這個鉤子會在你卸載該模塊時觸發。它多用於模塊需要垃圾回收機制時
+![Alt text](https://imgur.com/ZNqbXf3.png)
+![Alt text](https://imgur.com/LNHAEKz.png)
+![Alt text](https://imgur.com/8IVdvjc.png)
+![Alt text](https://imgur.com/5rfq3OF.png)
+![Alt text](https://imgur.com/tGhBxmJ.png)
+![Alt text](https://imgur.com/YLSphly.png)
+
+#### 第九章 後端式圖
+1. 新增MENU跟窗口動作-act_window or record建立
+2. 打開指定視圖動作
+3. 表單新增按鈕連接客戶
+4. 表單新增按鈕連接標籤
+5. 表單動作傳遞-context修改語言
+6. 搜尋透過domain
+7. list_view
+8. 搜尋VIEW
+9. 新增側邊攔
+10. 繼承
+11. 順序調整
+12. 動態屬性
+13. 內鑲視圖
+14. 文件預讀
+15. 看板
+16. 專案
+17. 日曆
+18. 圖表
+19. COHORT(企業版)
+20. 儀錶板(企業版)
+21. 甘特(企業版)
+22. 活動
+23. 地圖(企業版)
+![Alt text](https://imgur.com/g8qxF2Z.png)
+![Alt text](https://imgur.com/0ZcjFhj.png)
+![Alt text](https://imgur.com/LbVVTQo.png)
