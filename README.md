@@ -98,3 +98,28 @@
 ![Alt text](https://imgur.com/5rfq3OF.png)
 ![Alt text](https://imgur.com/tGhBxmJ.png)
 ![Alt text](https://imgur.com/YLSphly.png)
+
+#### 第九章 後端式圖
+1. 新增MENU跟窗口動作-act_window or record建立
+2. 打開指定視圖動作
+3. 表單新增按鈕連接客戶
+4. 表單新增按鈕連接標籤
+5. 表單動作傳遞-context修改語言
+6. 搜尋透過domain
+7. list_view
+8. 搜尋VIEW
+9. 新增側邊攔
+10.繼承
+11.順序調整
+12.動態屬性
+13.內鑲視圖
+14.文件預讀
+15.看板
+16.專案
+17.日曆
+18.圖表
+19.COHORT(企業版)
+20.儀錶板(企業版)
+21.甘特(企業版)
+22.活動
+23.地圖(企業版)
