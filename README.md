@@ -137,5 +137,5 @@
 5. 透過安全組啟用功能，security/groups.xml，新增透過設定，判斷是否能讀取欄位，release_date
 6. 用超級用戶進行訪問，透過按鈕進行sudo.write進行寫入。
 7. 根據訪問組來隱藏MENU,在view上寫group進行設定。
-![Alt text](https://imgur.com/0ZcjFhj.png)
-![Alt text](https://imgur.com/LbVVTQo.png)
+![Alt text](https://imgur.com/zGeauns.png)
+![Alt text](https://imgur.com/9EMoBXW.png)
