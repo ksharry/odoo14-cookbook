@@ -126,3 +126,16 @@
 ![Alt text](https://imgur.com/g8qxF2Z.png)
 ![Alt text](https://imgur.com/0ZcjFhj.png)
 ![Alt text](https://imgur.com/LbVVTQo.png)
+
+
+#### 第十章 訪問權
+  >  ODOO12 後新增ACL(訪問權)，僅用於普通模組，非抽象與臨時使用。
+1. 創建訪問組.security/group.xml   manager/user
+2. 增加訪問權ACL.security/ir.model.access.csv   1,1,1,1
+3. 新增欄位訪問，透過group進行  private_note
+4. 新增記錄規則,security/security_rules.xml，透過ORM撰寫判定欄位是否能讀取。is_public
+5. 透過安全組啟用功能，security/groups.xml，新增透過設定，判斷是否能讀取欄位，release_date
+6. 用超級用戶進行訪問，透過按鈕進行sudo.write進行寫入。
+7. 根據訪問組來隱藏MENU,在view上寫group進行設定。
+![Alt text](https://imgur.com/0ZcjFhj.png)
+![Alt text](https://imgur.com/LbVVTQo.png)
