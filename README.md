@@ -147,4 +147,4 @@
 4. 將翻譯字符串導出到文件  Translations > Import/Export > Export Translation
 5. 使用gettext工具來簡化翻譯
 6. 將翻譯文件導入到Odoo中
-7. 對網站修改自定義URL語言代碼
+7. 對網站修改自定義URL語言代碼 Settings > Translations > Languages
