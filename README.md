@@ -139,3 +139,12 @@
 7. 根據訪問組來隱藏MENU,在view上寫group進行設定。
 ![Alt text](https://imgur.com/zGeauns.png)
 ![Alt text](https://imgur.com/9EMoBXW.png)
+
+#### 第十一章 國際化
+1. 安裝語言及配置用戶首選項  Settings > Translations > Load a Translation
+2. 配置語言相關設置   Settings > Translations > Languages
+3. 通過網頁客戶端在用戶界面翻譯文本  Settings > Users & Companies > Groups
+4. 將翻譯字符串導出到文件  Translations > Import/Export > Export Translation
+5. 使用gettext工具來簡化翻譯
+6. 將翻譯文件導入到Odoo中
+7. 對網站修改自定義URL語言代碼 Settings > Translations > Languages
