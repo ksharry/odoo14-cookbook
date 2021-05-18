@@ -148,3 +148,12 @@
 5. 使用gettext工具來簡化翻譯
 6. 將翻譯文件導入到Odoo中
 7. 對網站修改自定義URL語言代碼 Settings > Translations > Languages
+
+#### 第十六章 OWL(ODOO WEB LIBRARY)
+  >  javascript全新框架，基於組件的框架，QWEB模板
+1. 新增OWL組件(js,qweb)
+2. 新增關閉動作(qweb)
+3. 組件左右滑動、響應式(js,qweb)
+4. 組件的生命週期(js->constructor、willstart、mounted、willpatch、willunmounted)
+5. 在表單增加owl字段(js2,scss)
+![Alt text](https://imgur.com/vQPEERC.png)
