@@ -149,6 +149,20 @@
 6. 將翻譯文件導入到Odoo中
 7. 對網站修改自定義URL語言代碼 Settings > Translations > Languages
 
+#### 第十二章 自動化、工作留、EMAIL、列印
+1. 新增動態紀錄(狀態更新)
+2. 管理看板階段
+3. 看板新增快速新增樣板
+4. 看板新增優線序與顏色
+5. 看板新增進度條
+6. 新增伺服器動作(odoo/tools/safe_eval.py)，可由專案下自動更新優先與到期日
+7. 使用PYTHON代碼進行到期提醒
+8. 
+![Alt text](https://imgur.com/wRLNQcw.png)
+![Alt text](https://imgur.com/eY7P3gU.png)
+![Alt text](https://imgur.com/N2lnh4M.png)
+![Alt text](https://imgur.com/3OxEH8l.png)
+
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
 1. 新增OWL組件(js,qweb)
