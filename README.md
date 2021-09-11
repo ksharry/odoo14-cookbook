@@ -174,7 +174,9 @@
 3. 使用傳遞給handler的參數
    + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.3.png?raw=true)
 4. 修改已有handler
+   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.4.png?raw=true)
 5. 提供對靜態資源的訪問
+   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.5.png?raw=true)
 
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
