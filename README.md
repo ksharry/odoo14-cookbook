@@ -186,14 +186,46 @@
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.4.png?raw=true)
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.5.png?raw=true)
 
-#### 第十四章 CMS網站開發
-  >  javascript全新框架，基於組件的框架，QWEB模板
+#### 第十四章 CMS網站開發 
+  >  odoo12以後使用Bootstrap 4(SCSS)，12以前為Bootstrap 3(LESS)
+0. 資源包:任務是將所有JavaScript和CSS合併為一個文件
+   + web.assets_common：這個資源包包含對所有應用通用的基本工具文件，如JQurey, Underscore.js, FontAwesome等等。此資源包用於前台（網站）、後台、銷售點（POS）和報表等處。這一通用資源在Odoo的幾乎所有地方加載。它也包含用於Odoo模塊系統的boot.js文件。
+   + web.assets_backend：這一資源包在Odoo的後台中使用（ERP部分）。它包含所有與web客戶端、視圖、字段微件、動作管理器等相關的代碼。
+   + web.assets_frontend或website.assets_frontend:：這一資源包用於Odoo的前台（網站部分）。它包含所有與網站端應用相關的代碼，如電商、博客、線上活動、論壇和在線聊天等等。注意這個資源包不包含與網站編輯和拖拽功能（網站構造器）相關的代碼。這背後的原因是我們不希望在公眾使用網站時加載編輯器資源。
+   + web_editor.assets_editor和web_editor.summernote：這個資源包包含與網站編輯小組件選項及拖拽功能（網站構造器）相關的代碼。它僅在用戶對網站具有編輯權限時才進行加載。也用於批量郵件設計工具。
+   + web.report_assets_common：QWeb報表僅僅是通過HTML生成的PDF文件。這一資源在報表佈局中進行加載。
+0. Odoo通過AssetsBundle類管理其靜態資源，位於/odoo/addons/base/models/assetsbundle.py。 AssetBundle不僅合併多個文件，也打包了各種功能。以下是其所提供的功能列表：
+   + 合併多個JavaScript和CSS文件。
+   + 通過從文件內容中刪除註釋、多餘空格及回車換行來最小化JavaScript和CSS文件。刪除這一額外數據會減小靜態資源的大小並提升頁面加載速度。
+   + 擁有對CSS預處理器的內置支持，如SASS和LESS。這表示我們可以添加SCSS和LESS文件，它們會自動編譯並添加到資源包中。
 1. 管理靜態資源
-2. 為網站擴展CSS和JavaScript
+   + controllers/main.py抓資料
+   + views/templates.xml中添加最小化模板
+   + website.layout中，通过oe_structure类添加可拖放元素
+   + 代码块加入到website.layout中以显示图书的信息
+   + website.layout中添加一个不可编辑元素
+2. 為網站擴展CSS和JavaScript(進階)
 3. 創建或更改模板 – QWeb
+   + 在controllers/main.py中添加控制器提供图书列表服务
+   + 在views/templates.xml中添加最小化模板
+   + 在website.layout中，通过oe_structure类添加可拖放元素
+   + 将该代码块加入到website.layout中以显示图书的信息
+   + 在website.layout中添加一个不可编辑元素
 4. 管理動態路由
+   + 在main.py中为图书详情添加一个新路径
+   + 在templates.xml中为图书详情添加一个新模板
+   + 在图书列表模板中添加一个按钮如下
 5. 為用戶提供靜態小組件
+   + 添加文件views/snippets.xml
+   + 在views/snippets.xml中添加小组
+   + 在小组件列表中列出模板
 6. 為用戶提供動態小組件
+   + 在views/snippets.xml中添加小组件的给定QWeb模板
+   + 注册小组件并添加选项来修改小组件的行为
+   + 然后在图书小组件中添加组件选项
+   + 新增文件/static/src/js/snippets.js并添加代码来渲染动态小组件
+   + 添加public微件来动态渲染图书小组件
+   + 在模块中添加以上JavaScript文件
 7. 獲取網站用戶的輸入
 8. 管理搜索引擎優化（SEO）選項
 9. 管理網站的站點地圖
