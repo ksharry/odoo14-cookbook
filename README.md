@@ -165,6 +165,7 @@
 
 #### 第十三章 WEB服務端開發
   >  Odoo網頁請求都是由Python庫werkzeug來進行處理的，
+
 0.工作流程:
    + 伺服器建立socket，監聽port，等待client 連線
    + 當請求過來時，server解析client msg放到環境變數environ中，並呼叫繫結的handler來處理
