@@ -175,17 +175,35 @@
    + wsgi app將reponse header/status/body回傳給wsgi handler
    + handler 通過socket將response msg返回到client
 1. 讓路徑在網絡中可訪問
-   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.1.png?raw=true)
 2. 限制線上路徑的訪問
-   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.21.png?raw=true)
-   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.22.png?raw=true)
-   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.23.png?raw=true)
 3. 使用傳遞給handler的參數
-   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.3.png?raw=true)
 4. 修改已有handler
-   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.4.png?raw=true)
 5. 提供對靜態資源的訪問
-   + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.5.png?raw=true)
+6. 
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.1.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.21.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.3.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.4.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.5.png?raw=true)
+
+#### 第十四章 CMS網站開發
+  >  javascript全新框架，基於組件的框架，QWEB模板
+1. 管理靜態資源
+2. 為網站擴展CSS和JavaScript
+3. 創建或更改模板 – QWeb
+4. 管理動態路由
+5. 為用戶提供靜態小組件
+6. 為用戶提供動態小組件
+7. 獲取網站用戶的輸入
+8. 管理搜索引擎優化（SEO）選項
+9. 管理網站的站點地圖
+10. 獲取訪客的國家信息
+11. 追踪營銷活動
+12. 管理多站點
+13. 重定向老URL
+14. 網站相關記錄的發布管理
+15. 
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.1.png?raw=true)
 
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
