@@ -164,7 +164,14 @@
 ![Alt text](https://imgur.com/3OxEH8l.png)
 
 #### 第十三章 WEB服務端開發
-  >  Odoo網頁請求都是由Python庫werkzeug來進行處理的
+  >  Odoo網頁請求都是由Python庫werkzeug來進行處理的，工作流程:
+     + 伺服器建立socket，監聽port，等待client 連線
+     + 當請求過來時，server解析client msg放到環境變數environ中，並呼叫繫結的handler來處理
+     + handler解析這個http請求，將請求訊息例如method、path等放到environ中
+     + wsgi handler再將一些server端訊息也放到environ中，最後server msg，client msg，以及本次請求msg 全部都儲存到了環境變數envrion中；
+     + wsgi handler呼叫註冊的wsgi app，並將envrion和回撥函式傳給wsgi app
+     + wsgi app將reponse header/status/body回傳給wsgi handler
+     + handler 通過socket將response msg返回到client
 1. 讓路徑在網絡中可訪問
    + ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.1.png?raw=true)
 2. 限制線上路徑的訪問
