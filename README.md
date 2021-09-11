@@ -166,6 +166,7 @@
 #### 第十三章 WEB服務端開發
   >  Odoo網頁請求都是由Python庫werkzeug來進行處理的
 1. 讓路徑在網絡中可訪問
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.1.png?raw=true)
 2. 限制線上路徑的訪問
 3. 使用傳遞給handler的參數
 4. 修改已有handler
