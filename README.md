@@ -168,7 +168,11 @@
 1. 讓路徑在網絡中可訪問
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.1.png?raw=true)
 2. 限制線上路徑的訪問
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.21.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.22.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.23.png?raw=true)
 3. 使用傳遞給handler的參數
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.3.png?raw=true)
 4. 修改已有handler
 5. 提供對靜態資源的訪問
 
