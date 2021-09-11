@@ -163,6 +163,14 @@
 ![Alt text](https://imgur.com/N2lnh4M.png)
 ![Alt text](https://imgur.com/3OxEH8l.png)
 
+#### 第十三章 WEB服務端開發
+  >  Odoo網頁請求都是由Python庫werkzeug來進行處理的
+1. 讓路徑在網絡中可訪問
+2. 限制線上路徑的訪問
+3. 使用傳遞給handler的參數
+4. 修改已有handler
+5. 提供對靜態資源的訪問
+
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
 1. 新增OWL組件(js,qweb)
