@@ -246,7 +246,14 @@
 12. 管理多站點
 13. 重定向老URL
 14. 網站相關記錄的發布管理
-![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.1.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.2.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.3.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.4.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.5.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.6.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.7.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.8.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.9.png?raw=true)
 
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
