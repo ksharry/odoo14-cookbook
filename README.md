@@ -166,7 +166,7 @@
 #### 第十三章 WEB服務端開發
   >  Odoo網頁請求都是由Python庫werkzeug來進行處理的，
 
-0.工作流程:
+0. 工作流程:
    + 伺服器建立socket，監聽port，等待client 連線
    + 當請求過來時，server解析client msg放到環境變數environ中，並呼叫繫結的handler來處理
    + handler解析這個http請求，將請求訊息例如method、path等放到environ中
@@ -238,11 +238,11 @@
    + slug用于根据记录名生成整洁
    + sitemap_qs2dom用于根据路由和查询字符串生成作用域
 10. 獲取訪客的國家信息
-   + ./odoo-bin -c config_file --geoip-db=location_of_geoip_DB
-   + ./odoo-bin -c main.cfg --geoip-db=~/GeoLite2-Country.mmdb
-   + 限制國家讀取資訊。
+    + ./odoo-bin -c config_file --geoip-db=location_of_geoip_DB
+    + ./odoo-bin -c main.cfg --geoip-db=~/GeoLite2-Country.mmdb
+    + 限制國家讀取資訊。
 11. 追踪營銷活動
-   + 異常改main.py 的domain
+    + 異常改main.py 的domain
 12. 管理多站點
 13. 重定向老URL
 14. 網站相關記錄的發布管理
