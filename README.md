@@ -255,6 +255,11 @@
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.8.png?raw=true)
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.9.png?raw=true)
 
+#### 第十五章 網頁客戶端開發
+  >  Odoo網頁請求都是由Python庫werkzeug來進行處理的，
+
+0. 工作流程:
+
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
 1. 新增OWL組件(js,qweb)
