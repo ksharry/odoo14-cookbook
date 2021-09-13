@@ -258,7 +258,33 @@
 #### 第十五章 網頁客戶端開發
   >  Odoo網頁請求都是由Python庫werkzeug來進行處理的，
 
-0. 工作流程:
+0. 文件物件模型（Document Object Model, DOM）是 HTML、XML 和 SVG 文件的程式介面。微件的生命週期:
+   + init()：這是微件構造函數。用於進行初始化。在初始化微件時，會先調用該方法。
+   + willStart()：這個方法在微件初始化以及在DOM中添加元素的過程中調用。它用於初始化異步數據到微件中。它還會返回一個延遲對象，只需要通過super()方法調用即可獲取。
+   + start()：該方法在完成微件渲染且尚未添加到DOM中時調用。這非常有助於渲染後任務，返回一個延遲對象。可以在this.$el中訪問已渲染的元素。
+   + destroy()：該方法在微件銷毀時調用。
+1. 創建自定義微件
+   + static/src/js/field_widget.js，导入了AbstractField和fieldRegistry。
+   + static/src/scss/field_widget.scss中添加一些SCSS
+   + views/templates.xml后台资源中注册这两个文件
+2. 使用客戶端QWeb模板
+   + 在js寫的模組化導入web.core并将对qweb的引用提取为一个变量
+   + 添加模板文件static/src/xml/qweb_template.xml
+3. 向服務端做RPC調用(遠端程序呼叫：Remote Procedure Call)
+   + JS添加willStart方法并在RPC调用中设置colorGroupData
+   + QWEB上調用內容
+4. 新建一個視圖
+   + modle:新增ir.ui.view/ir.actions.act_window.view/model
+   + /static/src/js/m2m_group_model.js
+   + /static/src/js/m2m_group_controller.js
+   + /static/src/js/m2m_group_renderer.js
+   + /static/src/js/m2m_group_view.js
+   + /static/src/xml/qweb_template.xml文件中为视图添加QWeb模板
+   + /view/template註冊JavaScript文件
+   + /view上添加m2m
+5. 調試客戶端代碼
+6. 通過引導提升用戶上手體驗
+7. 移動應用JavaScript
 
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
