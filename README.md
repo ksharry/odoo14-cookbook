@@ -227,14 +227,25 @@
    + 添加public微件来动态渲染图书小组件
    + 在模块中添加以上JavaScript文件
 7. 獲取網站用戶的輸入
+   + **POST是只有送出資訊
+   + sudo()權限新增資料
+   + csrf_token避免偽照攻擊
 8. 管理搜索引擎優化（SEO）選項
+   + 每本圖書/main_object傳遞對象
+   + 不僅TDK（Title, Description, Keywords）的優化
 9. 管理網站的站點地圖
+   + Technical > Database Structure > Attachments / sitemap-1.xml  刪除後可再生成
+   + slug用于根据记录名生成整洁
+   + sitemap_qs2dom用于根据路由和查询字符串生成作用域
 10. 獲取訪客的國家信息
+   + ./odoo-bin -c config_file --geoip-db=location_of_geoip_DB
+   + ./odoo-bin -c main.cfg --geoip-db=~/GeoLite2-Country.mmdb
+   + 限制國家讀取資訊。
 11. 追踪營銷活動
+   + 異常改main.py 的domain
 12. 管理多站點
 13. 重定向老URL
 14. 網站相關記錄的發布管理
-15. 
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch13.1.png?raw=true)
 
 #### 第十六章 OWL(ODOO WEB LIBRARY)
