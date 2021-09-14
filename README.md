@@ -335,5 +335,5 @@
    + pip install OdooRPC
    + jsonrpc格式
 10. 生成API密鑰
-   + 双因素认证(2FA) 
-   + 除了odoorpc外，都可以使用。
+    + 双因素认证(2FA) 
+    + 除了odoorpc外，都可以使用。
