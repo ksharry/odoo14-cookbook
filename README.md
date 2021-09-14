@@ -282,15 +282,35 @@
    + /static/src/xml/qweb_template.xml文件中为视图添加QWeb模板
    + /view/template註冊JavaScript文件
    + /view上添加m2m
-5. 調試客戶端代碼
+5. 調試客戶端代碼(Chromium)
 6. 通過引導提升用戶上手體驗
+   + /static/src/js/my_library_tour.js
+   + 註冊JS
 7. 移動應用JavaScript
 
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
 1. 新增OWL組件(js,qweb)
+   + /my_library/static/src/js/component.js
+   + /my_library/views/templates.xml file 新增JS組件
+   + component.js 文件中定义OWL工具类
+   + component.js 文件中添加OWL组件及其基础模板
+   + component.js 文件增加到網頁客戶端
 2. 新增關閉動作(qweb)
 3. 組件左右滑動、響應式(js,qweb)
-4. 組件的生命週期(js->constructor、willstart、mounted、willpatch、willunmounted)
+4. OWL組件的生命週期(js)
+   + constructor
+   + willstart
+   + mounted
+   + willpatch
+   + willunmounted
 5. 在表單增加owl字段(js2,scss)
+   + model新增欄位、view給widget
+   + static/src/xml/qweb_template.xml 增加QWEB樣板
+   + static/src/scss/field_widget.scss
+   + static/src/js/field_widget.js
 ![Alt text](https://imgur.com/vQPEERC.png)
+
+#### 第二十章 ODOO中的遠端過程調用
+  >  javascript全新框架，基於組件的框架，QWEB模板
+1. 新增OWL組件(js,qweb)
