@@ -246,6 +246,7 @@
 12. 管理多站點
 13. 重定向老URL
 14. 網站相關記錄的發布管理
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.0.png?raw=true)
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.2.png?raw=true)
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.3.png?raw=true)
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch14.4.png?raw=true)
@@ -287,6 +288,8 @@
    + /static/src/js/my_library_tour.js
    + 註冊JS
 7. 移動應用JavaScript
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch15.1.png?raw=true)
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch15.6.png?raw=true)
 
 #### 第十六章 OWL(ODOO WEB LIBRARY)
   >  javascript全新框架，基於組件的框架，QWEB模板
@@ -337,3 +340,4 @@
 10. 生成API密鑰
     + 双因素认证(2FA) 
     + 除了odoorpc外，都可以使用。
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch20.1.png?raw=true)
