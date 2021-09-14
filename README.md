@@ -313,4 +313,27 @@
 
 #### 第二十章 ODOO中的遠端過程調用
   >  javascript全新框架，基於組件的框架，QWEB模板
-1. 新增OWL組件(js,qweb)
+1. 通過XML-RPC登錄/連接Odoo
+   + python3 odoo_authenticate.py
+   + authentication()方法可接收4个参数：数据库名、用户名、密码以及user agent环境。user agent环境是必传的参数
+2. 通過XML-RPCSearch/讀取記錄
+   + execute_kw (library.book 作为模型名、search作为方法名、domain)
+   + search_read
+3. 通過XML-RPC創建/更新/刪除記錄(CRUD)
+   + create 創建
+   + write 更新
+   + unlink 刪除
+   + check_access_rights
+4. 通過XML-RPC調用方法
+   + make_available
+5. 通過JSON-RPC登錄/連接Odoo
+   + JSON-RPC 2.0规范
+6. 通過JSON-RPC獲取/搜索記錄
+7. 通過JSON-RPC創建/更新/刪除記錄
+8. 通過JSON-RPC調用方法
+9. OCA odoorpc庫
+   + pip install OdooRPC
+   + jsonrpc格式
+10. 生成API密鑰
+   + 双因素认证(2FA) 
+   + 除了odoorpc外，都可以使用。
