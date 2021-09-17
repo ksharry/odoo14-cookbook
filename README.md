@@ -390,3 +390,4 @@
    + tracking=True
 8. 定期發送摘要郵件
    + Settings > Technical > Emails > Digest Emails
+![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch23.1.png?raw=true)
