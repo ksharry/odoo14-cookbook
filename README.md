@@ -341,3 +341,28 @@
     + 双因素认证(2FA) 
     + 除了odoorpc外，都可以使用。
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch20.1.png?raw=true)
+
+#### 第二十一章 性能優化
+  >  提升 ORM 級別的性能，而不是客戶端或部署端的性能
+1. 記錄集的預提取模式
+   + 通过向browse方法传递ID列表
+2. 內存內緩存 – ormcache
+   + from odoo import tools
+   + @tools.ormcache('mode')
+3. 生成圖像視圖
+   +  image.mixin
+4. 訪問狀態數據
+   + read_group()
+5. 創建或寫入多條記錄
+   + self.env['library.book'].create(vals)
+   + recordset.flush()
+6. 通過數據庫查詢訪問記錄
+   + self._cr.execute("SELECT id, name, date_release FROM library_book WHERE name ilike %s", ('%odoo%',))
+   + self._cr.dictfetchall()
+   + self._cr.fetchall()
+   + 通過記錄集有兩種訪問數據庫游標的方式：一種是通過記錄集方法，例如self._cr，另一種是通過環境，例如self.env.cr。
+   + self.env.cr.execute('SELECT id, name FROM library_book WHERE name ilike %s ';', (search_keyword,))
+7. Python代碼性能分析
+   + 	from odoo.tools.profiler import profile
+   + 	gprof2dot -f pstats -o /Users/parth/Desktop/prof.xdot /Users/parth/Desktop/make_available.prof
+   + 	xdot /Users/parth/Desktop/prof.xdot
