@@ -366,3 +366,27 @@
    + 	from odoo.tools.profiler import profile
    + 	gprof2dot -f pstats -o /Users/parth/Desktop/prof.xdot /Users/parth/Desktop/make_available.prof
    + 	xdot /Users/parth/Desktop/prof.xdot
+
+#### 第二十三章 在ODOO管理EMAIL
+  >  提升 ORM 級別的性能，而不是客戶端或部署端的性能
+1. 配置郵件接收和發送服務器
+   + mail.thread
+2. 管理文檔中的聊天器
+   + mail.activity.mixin
+3. 管理文檔中的活動
+4. 使用Jinja模板發送郵件
+   + Settings > Technical > Email > Templates菜单
+5. 使用QWeb模板發送郵件
+   + QWeb 模板的内容通过后台Settings > Technical > User Interface > Views
+   + QWEB VS JINJA
+     + 在邮件模板中没有简单的发送额外参数的方式。需要在对象变量中使用记录集来获取动态数据。另一方面，QWeb邮件模板可以通过values
+     + 要管理日期格式、时区和带有货币符号的金额，在Jinja模板中需要使用format_date、format_tz和format_amount函数，而在QWeb模板中则是自动进行管理的。
+     + 在Jinja中不能修改其它模块的已有模板，但在QWeb模板中可以通过继承修改邮件模板
+     + 可以直接通过消息编辑器选择并使用Jinja模板。在下图中，右下角的下拉菜单用于选择一个Jinja模板
+     + 使用QWeb，並不能直接通過消息編輯器來選擇模板。
+6. 管理郵件名稱
+   + Setting > Technical > Email > Aliases
+7. 在聊天器中記錄用戶修改
+   + tracking=True
+8. 定期發送摘要郵件
+   + Settings > Technical > Emails > Digest Emails
