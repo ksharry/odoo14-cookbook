@@ -314,6 +314,20 @@
    + static/src/js/field_widget.js
 ![Alt text](https://imgur.com/vQPEERC.png)
 
+#### 第十七章 ODOO應用內購買
+  >  以下是IAP服務每個流程步驟的講解：
+  + 客戶向服務提供服務商請求提供服務。通過請求，客戶將提供該帳戶的身份，服務使用它來識別用戶。（注意客戶需要在服務中安裝你的模塊）。
+  + 在收到來自客戶的請求後，服務提供者將查詢Odoo 客戶的賬戶裡是否有西方的積分。
+  + 在評審積分之後，服務提供者會執行服務。在某些情況下，服務提供者會調用外部服務來執行所請求的服務。
+  + 在執行由客戶所請求的服務提供者返回 Odoo 後，在獲取第 2 步中所獲得的積分。的積分。
+  + 服務提供者將返回客戶，通知他們所請求的已成功提供。一些可能會返回的結果信息，您可能會得到服務的結果。這些結果信息由客戶根據他們的規格（取決）於服務）來使用。
+1. 應用內購買（IAP）的概念
+2. 在Odoo中註冊一個IAP服務
+3. 創建一個IAP服務模塊
+4. 授權並收取IAP積分
+5. 創建一個IAP客戶端模塊
+6. 在客戶端下載時顯示問題
+
 #### 第二十章 ODOO中的遠端過程調用
   >  javascript全新框架，基於組件的框架，QWEB模板
 1. 通過XML-RPC登錄/連接Odoo
@@ -367,6 +381,15 @@
    + 	gprof2dot -f pstats -o /Users/parth/Desktop/prof.xdot /Users/parth/Desktop/make_available.prof
    + 	xdot /Users/parth/Desktop/prof.xdot
 
+#### 第二十二章 POS
+  >  不同的架構，因此它可以離線運行
+1. 添加自定義JavaScript/SCSS文件
+2. 在鍵盤上添加動作按鈕
+3. 做RPC調用
+4. 修改POS界面UI
+5. 修改現有業務邏輯
+6. 修改客戶收據
+
 #### 第二十三章 在ODOO管理EMAIL
   >  提升 ORM 級別的性能，而不是客戶端或部署端的性能
 1. 配置郵件接收和發送服務器
@@ -391,3 +414,17 @@
 8. 定期發送摘要郵件
    + Settings > Technical > Emails > Digest Emails
 ![Alt text](https://github.com/ksharry/odoo14-cookbook/blob/main/png/ch23.1.png?raw=true)
+
+#### 第二十四章 IOT盒子
+  >  企業版-Raspberry Pi 3 Model B+，可通過https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/
+1. 對樹莓派（Raspberry Pi）套裝物聯網鏡像
+2. 通過網絡連接物聯網盒子
+3. 對Odoo添加物聯網盒子
+4. 加載驅動及已連接設備
+5. 從設備接收輸入
+   + 攝影機
+   + 卡尺
+   + 重量秤
+7. 通過SSH訪問物聯網市場
+8. 配置POS（銷售點）
+9. 直接向打印機發送PDF報表
